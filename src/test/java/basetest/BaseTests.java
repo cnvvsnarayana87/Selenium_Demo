@@ -25,7 +25,7 @@ public class BaseTests {
 			this.driver = new SafariDriver();
 		} else {
 			throw new Error(
-					"Browser name is not specified correctly. It should be either chrome, firefox, edge or safari!!");
+					"The browser name should be either Chrome, Firefox, Edge, or Safari!");
 		}
 	}
 
