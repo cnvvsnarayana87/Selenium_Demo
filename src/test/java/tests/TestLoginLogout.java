@@ -48,7 +48,7 @@ public class TestLoginLogout extends BaseTests {
 	@Test
 	public void testLogoutPage() {
 
-		final LogoutPage logoutPage = new LogoutPage(this.getDriver());
+		final LogoutPage logoutPage = new LogoutPage(getDriver());
 
 		SecureAreaPage secureAreaPageLogout = logoutPage.performLogout();
 		assertTrue(secureAreaPageLogout.isLoginBtnDisplayed());

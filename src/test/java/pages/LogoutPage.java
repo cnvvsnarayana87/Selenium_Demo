@@ -12,11 +12,11 @@ public class LogoutPage {
 	}
 
 	public WebElement logoutBtn() {
-		return this.driver.findElement(By.xpath("//div//i[contains(text(),' Logout')]"));
+		return driver.findElement(By.xpath("//div//i[contains(text(),' Logout')]"));
 	}
 
 	public SecureAreaPage performLogout() {
-		this.logoutBtn().click();
-		return new SecureAreaPage(this.driver);
+		logoutBtn().click();
+		return new SecureAreaPage(driver);
 	}
 }

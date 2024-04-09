@@ -16,26 +16,26 @@ public class LoginPage {
 	}
 
 	public String pageHeader() {
-		return this.driver.findElement(pageHeader).getText();
+		return driver.findElement(pageHeader).getText();
 	}
 
 	private WebElement userNameField() {
-		return this.driver.findElement(userNameField);
+		return driver.findElement(userNameField);
 	}
 
 	private WebElement passwordField() {
-		return this.driver.findElement(passwordField);
+		return driver.findElement(passwordField);
 	}
 
 	private WebElement loginBtn() {
-		return this.driver.findElement(loginBtn);
+		return driver.findElement(loginBtn);
 	}
 
 	public SecureAreaPage performLogin(String userName, String password) {
 		this.userNameField().sendKeys(userName);
 		this.passwordField().sendKeys(password);
 		this.loginBtn().click();
-		return new SecureAreaPage(this.driver);
+		return new SecureAreaPage(driver);
 	}
 	
 	
